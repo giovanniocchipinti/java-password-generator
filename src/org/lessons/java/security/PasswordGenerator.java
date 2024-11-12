@@ -4,31 +4,32 @@ import java.util.Scanner;
 public class PasswordGenerator {
     public static void main(String[] args) {
 
+        //* Creazione scanner per far prendere la parola inserita dall'utente */
+        Scanner input = new Scanner(System.in);
 
-    
-
-
+        //* Messaggio di intestazione */
         System.out.println("Inserisci i dati richiesti per generare una password:");
 
+        //* Richieste di inserimento dati all'utente */
         System.out.println("Inserisci il tuo nome e premi invio");
-        String userName = "";
+        String userName = input.nextLine();
 
         System.out.println("Inserisci il tuo cognome e premi invio:");
-        String userSurname = "";
+        String userSurname = input.nextLine();
 
         System.out.println("Inserisci il tuo colore preferito e premi invio:");
-        String userFavCol = "";
+        String userFavCol = input.nextLine();
 
         System.out.println("Inserisci il tuo giorno di nascita e premi invio");
-        int userBirthDay = 0;
+        int userBirthDay = input.nextInt();
 
         System.out.println("Inserisci il tuo mese di nascita in formato numero e premi invio");
-        int userBirthMonth = 0;
+        int userBirthMonth = input.nextInt();
 
         System.out.println("Inserisci il tuo anno di nascita e premi invio");
-        int userBirthYear = 0; 
+        int userBirthYear = input.nextInt(); 
 
- 
+        input.close();
 
     }
 }
