@@ -29,6 +29,13 @@ public class PasswordGenerator {
         System.out.println("Inserisci il tuo anno di nascita e premi invio");
         int userBirthYear = input.nextInt(); 
 
+        //* Generazione password con concatenazione */
+        String pswGen = userName + "-" + userSurname + "-" + userFavCol + "-" + (userBirthDay + userBirthMonth + userBirthYear);
+
+        //* Stampa della password generata */ 
+        System.out.println("La password è: " + pswGen);
+
+        
         input.close();
 
     }
